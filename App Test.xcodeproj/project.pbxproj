@@ -13,6 +13,11 @@
 		04633C7F2597AC91006ACF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04633C7D2597AC91006ACF5B /* Main.storyboard */; };
 		04633C812597AC92006ACF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04633C802597AC92006ACF5B /* Assets.xcassets */; };
 		04633C842597AC92006ACF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04633C822597AC92006ACF5B /* LaunchScreen.storyboard */; };
+		04633C8F2597C155006ACF5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04633C8E2597C155006ACF5B /* User.swift */; };
+		04633C922597C1AD006ACF5B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04633C912597C1AD006ACF5B /* Game.swift */; };
+		04633C9A2597DF45006ACF5B /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04633C992597DF45006ACF5B /* UsersTableViewController.swift */; };
+		04ADD1192597F9C9009442A5 /* AddGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD1172597F9C9009442A5 /* AddGamesViewController.swift */; };
+		04ADD11A2597F9C9009442A5 /* AddGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ADD1182597F9C9009442A5 /* AddGamesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		04633C802597AC92006ACF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04633C832597AC92006ACF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04633C852597AC92006ACF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04633C8C2597ACDE006ACF5B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		04633C8E2597C155006ACF5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04633C912597C1AD006ACF5B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		04633C992597DF45006ACF5B /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		04ADD1172597F9C9009442A5 /* AddGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGamesViewController.swift; sourceTree = "<group>"; };
+		04ADD1182597F9C9009442A5 /* AddGamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGamesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +67,45 @@
 		04633C762597AC91006ACF5B /* App Test */ = {
 			isa = PBXGroup;
 			children = (
+				04633C942597C219006ACF5B /* Models */,
+				04633C962597C24F006ACF5B /* Views */,
+				04633C952597C234006ACF5B /* Controllers */,
 				04633C772597AC91006ACF5B /* AppDelegate.swift */,
 				04633C792597AC91006ACF5B /* SceneDelegate.swift */,
-				04633C7B2597AC91006ACF5B /* ViewController.swift */,
-				04633C7D2597AC91006ACF5B /* Main.storyboard */,
 				04633C802597AC92006ACF5B /* Assets.xcassets */,
 				04633C822597AC92006ACF5B /* LaunchScreen.storyboard */,
 				04633C852597AC92006ACF5B /* Info.plist */,
+				04633C8C2597ACDE006ACF5B /* MyPlayground.playground */,
 			);
 			path = "App Test";
+			sourceTree = "<group>";
+		};
+		04633C942597C219006ACF5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04633C8E2597C155006ACF5B /* User.swift */,
+				04633C912597C1AD006ACF5B /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04633C952597C234006ACF5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04633C7B2597AC91006ACF5B /* ViewController.swift */,
+				04633C992597DF45006ACF5B /* UsersTableViewController.swift */,
+				04ADD1172597F9C9009442A5 /* AddGamesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04633C962597C24F006ACF5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04633C7D2597AC91006ACF5B /* Main.storyboard */,
+				04ADD1182597F9C9009442A5 /* AddGamesViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ADD11A2597F9C9009442A5 /* AddGamesViewController.xib in Resources */,
 				04633C842597AC92006ACF5B /* LaunchScreen.storyboard in Resources */,
 				04633C812597AC92006ACF5B /* Assets.xcassets in Resources */,
 				04633C7F2597AC91006ACF5B /* Main.storyboard in Resources */,
@@ -137,6 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04633C8F2597C155006ACF5B /* User.swift in Sources */,
+				04633C922597C1AD006ACF5B /* Game.swift in Sources */,
+				04ADD1192597F9C9009442A5 /* AddGamesViewController.swift in Sources */,
+				04633C9A2597DF45006ACF5B /* UsersTableViewController.swift in Sources */,
 				04633C7C2597AC91006ACF5B /* ViewController.swift in Sources */,
 				04633C782597AC91006ACF5B /* AppDelegate.swift in Sources */,
 				04633C7A2597AC91006ACF5B /* SceneDelegate.swift in Sources */,
